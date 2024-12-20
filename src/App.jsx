@@ -5,6 +5,7 @@ import { ToastContainer } from 'react-toastify';
 import ExperienceLevel from './pages/experienceLevel/ExperienceLevel';
 import ChooseTemplate from './pages/choose-template/ChooseTemplate';
 import ResumeSection from './pages/resume-section/ResumeSection';
+import CreateResume from './pages/create-resume/CreateResume';
 function App() {
 
   return (
@@ -27,6 +28,7 @@ function App() {
           <Route path="resume/experience-level" element={<ExperienceLevel/>}/>
           <Route path="resume/choose-template" element={<ChooseTemplate/>}/>
           <Route path="resume/section/cntc" element={<ResumeSection/>}/>
+          <Route path="resume/create-resume" element={<CreateResume/>}/>
         </Routes>
       </Router>
     </div>

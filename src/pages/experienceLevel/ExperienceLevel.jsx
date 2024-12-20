@@ -26,7 +26,6 @@ const ExperienceLevel = () => {
    
   };
 
-  console.log(isCheck,"isCheck")
   return (
     <div>
       <BuilderBox

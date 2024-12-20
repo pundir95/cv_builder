@@ -496,7 +496,7 @@ select.common-field {
 
 .common-field:focus {
     box-shadow: none;
-    background-color: #f5f5f5;
+    background-color: #171616;
 }
 
 .outline-main-btn {
@@ -2179,6 +2179,9 @@ input[type="date"].common-field {
       font-weight: bold;
        font-size: 24px;
 }
+
+
+  
 
 @media only screen and (max-width: 1550px) {
     .common-field {

@@ -11,10 +11,10 @@ const LocationSection = ({
   clearErrors,
   isTimeZoneRequired = false,
   isRegistrationStep = false,
-  countryCode
+  countryCode,
 }) => {
   const { t } = useTranslation();
- 
+
   return (
     <>
       {isRegistrationStep ? (
@@ -34,12 +34,12 @@ const LocationSection = ({
                 options={countriesList}
               /> */}
 
-               <CommonInput
+              <CommonInput
                 label={`County *`}
                 name={"country_code"}
                 invalidFieldRequired={true}
                 control={control}
-                rules={{ required: "Country is required"}}
+                rules={{ required: "Country is required" }}
                 error={errors?.["country_code"]}
                 placeholder={"e.g. USA"}
               />
@@ -108,24 +108,20 @@ const LocationSection = ({
               options={timeZoneState}
             /> */}
 
-<CommonInput
-                label={t(`TimeZone`) + ` *`}
-                name={"time_zone"}
-                // name={isVendorStep1==="true" ? "post_code" : "passcode"}
-                invalidFieldRequired={true}
-                control={control}
-                rules={{ required: "Time Zone is required" }}
-                error={errors?.["time_zone"]}
-                placeholder={"Eg:Asia/Calcutta +5:30"}
-              />
+            <CommonInput
+              label={t(`TimeZone`) + ` *`}
+              name={"time_zone"}
+              // name={isVendorStep1==="true" ? "post_code" : "passcode"}
+              invalidFieldRequired={true}
+              control={control}
+              rules={{ required: "Time Zone is required" }}
+              error={errors?.["time_zone"]}
+              placeholder={"Eg:Asia/Calcutta +5:30"}
+            />
           </Col>
         </>
       ) : (
-        <>
-          
-
-          
-        </>
+        <></>
       )}
     </>
   );

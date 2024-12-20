@@ -1,8 +1,5 @@
-import SideBarSection from "../../components/resume-section/sidebar-section/SideBarSection";
 import {
   BUILDER_STEP_1_FIELDS,
-  RESUME_SIDE_LIST,
-  SIDEBAR_PERCENTAGE,
 } from "../../components/resume-section/constant";
 import { useState } from "react";
 import ResumeForm from "../../components/common/ResumeForm";
@@ -55,12 +52,6 @@ const ResumeSection = () => {
   };
   return (
     <section className="resume-section-wrapper d-flex">
-      <SideBarSection
-        activeStep={0}
-        handleSetActiveStep={handleSetActiveStep}
-        stepperSideBarItems={RESUME_SIDE_LIST}
-        sideBarPercentage={SIDEBAR_PERCENTAGE}
-      />
       <div className="resume-main-wrapper">
         <form className="position-relative z-3">
           <Container>
