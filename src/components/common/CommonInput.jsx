@@ -137,7 +137,9 @@ const CommonInput = ({
                     isDisabled={readOnly}
                     onChange={(selectedOption) => 
                      { console.log('Selected value:', selectedOption)
-                      field.onChange(selectedOption)}}
+                      field.onChange(selectedOption)
+                    }
+                    }
                     // value={selectOptions?.find(
                     //   (option) => option.value === field.value
                     // )}

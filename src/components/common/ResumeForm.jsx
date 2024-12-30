@@ -192,7 +192,6 @@ const ResumeForm = ({
                               rules={{ ...rules }}
                               error={errors?.[fieldName]}
                               type={type}
-                              //get options
                               defaultOption={defaultOption}
                               placeholder={placeholder}
                               isMaxRequired={isMaxRequired}

@@ -1,115 +1,81 @@
 import React from "react";
-import { Container, Row, Col, Card } from "react-bootstrap";
+import { Container, Row, Col, Card, Image, Button } from "react-bootstrap";
 
-const ProfessionalPathway = () => {
+const ProfessionalPathway = ({}) => {
   return (
-    <Container className="my-4" style={{ maxWidth: "900px" }}>
-      <Card className="shadow">
-        <Card.Body>
-          {/* Header Section */}
-          <Row className="bg-dark text-white py-4">
-            <Col>
-              <h1 className="text-uppercase mb-0" style={{ fontWeight: "bold" }}>
-                Caroline Cox
-              </h1>
-            </Col>
-          </Row>
+    <Col md={6} lg={4}>
+    <div
+      className="shadow bg-white rounded"
+      style={{ width: "100%" , transform:"scale(0.86)" }}
+    >
+      <Row>
+        <Col xs={4} className="bg-info text-white p-1 d-flex flex-column align-items-center">
+          <h1 style={{ fontSize: "10px", textAlign: "center" }}>Saanvi Patel</h1>
+          <Image
+            src="https://via.placeholder.com/40"
+            roundedCircle
+            alt="Profile Picture"
+            className="my-1"
+          />
+          <div className="text-center" style={{ fontSize: "8px" }}>
+            <p>Phone: +123456789</p>
+            <p>Email: saanvi.patel@example.com</p>
+            <p>Location: New York, USA</p>
+          </div>
+          <div className="text-start w-100 mt-1">
+            <h5 style={{ fontSize: "8px" }}>Skills</h5>
+            <ul className="list-unstyled" style={{ fontSize: "8px", paddingLeft: "10px" }}>
+              <li>Customer Service</li>
+              <li>Teamwork</li>
+              <li>Time Management</li>
+            </ul>
+          </div>
+          <div className="text-start w-100 mt-1">
+            <h5 style={{ fontSize: "8px" }}>Languages</h5>
+            <ul className="list-unstyled" style={{ fontSize: "8px", paddingLeft: "10px" }}>
+              <li>English</li>
+              <li>Spanish</li>
+            </ul>
+          </div>
+        </Col>
+        <Col xs={8} className="p-1">
+          <h2 style={{ fontSize: "10px", borderBottom: "1px solid #ccc" }}>Work History</h2>
+          <div className="mt-1">
+            <h5 style={{ fontSize: "8px" }}>Retail Sales Associate</h5>
+            <p className="mb-0" style={{ fontSize: "7px" }}>Company XYZ | 2021 - Present</p>
+            <ul style={{ fontSize: "7px", paddingLeft: "10px" }}>
+              <li>Assisting customers with purchases.</li>
+              <li>Handling cash register transactions.</li>
+            </ul>
+          </div>
+          <div className="mt-1">
+            <h5 style={{ fontSize: "8px" }}>Intern</h5>
+            <p className="mb-0" style={{ fontSize: "7px" }}>Company ABC | 2019 - 2021</p>
+            <ul style={{ fontSize: "7px", paddingLeft: "10px" }}>
+              <li>Gained hands-on experience in accounting tasks.</li>
+              <li>Assisted in monthly reporting.</li>
+            </ul>
+          </div>
 
-          {/* Contact & Summary Section */}
-          <Row className="mt-4">
-            <Col md={4}>
-              <h5 className="mb-3">Contact</h5>
-              <p>
-                <i className="bi bi-geo-alt-fill"></i> 36043, Montgomery, Alabama <br />
-                <i className="bi bi-telephone-fill"></i> 555-555-555 <br />
-                <i className="bi bi-envelope-fill"></i> example@example.com
-              </p>
-              <h5 className="mt-4">Skills</h5>
-              <ul>
-                <li>Inventory and supply management</li>
-                <li>Medical billing and coding</li>
-                <li>Strong communication</li>
-                <li>HIPAA compliance</li>
-                <li>Proper sterilization techniques</li>
-                <li>Advanced anatomy knowledge</li>
-                <li>Monitoring patient progress</li>
-                <li>Case management</li>
-              </ul>
-              <h5 className="mt-4">Education</h5>
-              <p>
-                <strong>Bachelor of Science, Biology</strong> <br />
-                Alabama State University, Alabama <br />
-                12/2013
-              </p>
-            </Col>
+          <h2 className="mt-2" style={{ fontSize: "10px", borderBottom: "1px solid #ccc" }}>Education</h2>
+          <div className="mt-1">
+            <h5 style={{ fontSize: "8px" }}>Diploma in Financial Accounting</h5>
+            <p className="mb-0" style={{ fontSize: "7px" }}>XYZ Institute | 2018</p>
+          </div>
 
-            <Col md={8}>
-              <h5 className="mb-3">Summary</h5>
-              <p>
-                Highly motivated and committed Medical Assistant with proven history of superior
-                performance at individual, team, and organizational levels. Strong ability to multitask
-                and prioritize workloads with little or no supervision. Detail-oriented professional
-                looking to bring medical background and team-building skills to deadline-driven
-                environments.
-              </p>
-
-              <h5 className="mt-4">Relevant Skills</h5>
-              <ul>
-                <li>Professional manner with an emphasis on hospitality and guest service.</li>
-                <li>Strong ability to analyze information and provide solutions to problems.</li>
-                <li>Implemented processes that reduce costs while improving efficiency.</li>
-              </ul>
-
-              <h5 className="mt-4">Work History</h5>
-              <div className="mb-4">
-                <h6>Medical Assistant</h6>
-                <p className="text-muted">
-                  Capital City Gastroenterology, Montgomery, Alabama | January 2018 - Current
-                </p>
-                <ul>
-                  <li>
-                    Conduct 15 preliminary evaluations daily, including measuring weight, blood pressure,
-                    and documented results with accuracy.
-                  </li>
-                  <li>
-                    Manage monthly, and quarterly inventory of supplies using facility cost reporting
-                    records.
-                  </li>
-                  <li>
-                    Lead patients to exam rooms, answer general questions, and prepare patients for
-                    physicians by explaining the process.
-                  </li>
-                </ul>
-              </div>
-              <div className="mb-4">
-                <h6>Office Assistant</h6>
-                <p className="text-muted">
-                  Baptist Health, Montgomery, Alabama | February 2018 - January 2018
-                </p>
-                <ul>
-                  <li>Collected payments, issued receipts, and updated accounts to reflect new balances.</li>
-                  <li>Answered approximately 35+ phone calls daily and pleasantly welcomed visitors to the office.</li>
-                  <li>Tracked inventory and ordered office supplies encouraging cost-effective solutions.</li>
-                </ul>
-              </div>
-              <div>
-                <h6>Front Desk Clerk</h6>
-                <p className="text-muted">
-                  American Family Care, Montgomery, Alabama | February 2014 - January 2016
-                </p>
-                <ul>
-                  <li>Welcomed guests and facilitated a smooth check-in process.</li>
-                  <li>Supervised activities of housekeeping and maintenance staff.</li>
-                  <li>
-                    Managed 160+ reservations monthly, including bookings, cancellations, and amendments.
-                  </li>
-                </ul>
-              </div>
-            </Col>
-          </Row>
-        </Card.Body>
-      </Card>
-    </Container>
+          <div className="text-center mt-2">
+            <Button
+              variant="primary"
+              className="text-uppercase"
+              style={{ fontSize: "8px", padding: "2px 5px" }}
+            >
+              Recommended
+            </Button>
+          </div>
+        </Col>
+      </Row>
+    </div>
+  </Col>
   );
 };
 

@@ -1,8 +1,10 @@
 import { Col, Row } from "react-bootstrap";
 import BuilderHeading from "./BuilderHeading";
 import { BUILDER_HEADING } from "../../builderConstant/constant";
+import { useState } from "react";
 
-const BuilderBox = ({ data, handleClick, headingValue }) => {
+const BuilderBox = ({ data, handleClick, headingValue,selectedIndex }) => {
+ 
 
   return (
     <>
@@ -16,8 +18,10 @@ const BuilderBox = ({ data, handleClick, headingValue }) => {
                   <>
                     <span
                       key={index}
-                      className={`education-selection`}
-                      onClick={() => handleClick(item)}
+                      className={`education-selection ${
+                        selectedIndex === index ? "active" : ""
+                      }`}
+                      onClick={() => handleClick(item, index)}
                     >
                       {item.label}
                     </span>

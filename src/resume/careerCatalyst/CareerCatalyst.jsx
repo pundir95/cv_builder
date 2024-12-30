@@ -1,98 +1,80 @@
-import React from "react";
-import { Container, Row, Col, Card } from "react-bootstrap";
+import { Container, Row, Col, Card, Image, Button } from "react-bootstrap";
 
 const CareerCatalyst = () => {
   return (
-    <div className="resume-template-scale">
-      <Container className="my-4 catalyst-container">
-        <Card className="shadow">
-          <Card.Body>
-            <Row className="text-white bg-dark py-4">
-              <Col md={2} className="text-center">
-                <div className="catalyst-logo">
-                  <span className="catalyst-inner-logo">DB</span>
-                </div>
-              </Col>
-              <Col md={10} className="d-flex align-items-center">
-                <h2 className="text-uppercase font-2">Debra Brambila</h2>
-              </Col>
-            </Row>
+    <Col md={6} lg={4}>
+    <div
+      className="shadow bg-white rounded"
+      style={{ width: "100%" , transform:"scale(0.86)" }}
+    >
+      <Row>
+        <Col xs={4} className="bg-info text-white p-1 d-flex flex-column align-items-center">
+          <h1 style={{ fontSize: "10px", textAlign: "center" }}>Saanvi Patel</h1>
+          <Image
+            src="https://via.placeholder.com/40"
+            roundedCircle
+            alt="Profile Picture"
+            className="my-1"
+          />
+          <div className="text-center" style={{ fontSize: "8px" }}>
+            <p>Phone: +123456789</p>
+            <p>Email: saanvi.patel@example.com</p>
+            <p>Location: New York, USA</p>
+          </div>
+          <div className="text-start w-100 mt-1">
+            <h5 style={{ fontSize: "8px" }}>Skills</h5>
+            <ul className="list-unstyled" style={{ fontSize: "8px", paddingLeft: "10px" }}>
+              <li>Customer Service</li>
+              <li>Teamwork</li>
+              <li>Time Management</li>
+            </ul>
+          </div>
+          <div className="text-start w-100 mt-1">
+            <h5 style={{ fontSize: "8px" }}>Languages</h5>
+            <ul className="list-unstyled" style={{ fontSize: "8px", paddingLeft: "10px" }}>
+              <li>English</li>
+              <li>Spanish</li>
+            </ul>
+          </div>
+        </Col>
+        <Col xs={8} className="p-1">
+          <h2 style={{ fontSize: "10px", borderBottom: "1px solid #ccc" }}>Work History</h2>
+          <div className="mt-1">
+            <h5 style={{ fontSize: "8px" }}>Retail Sales Associate</h5>
+            <p className="mb-0" style={{ fontSize: "7px" }}>Company XYZ | 2021 - Present</p>
+            <ul style={{ fontSize: "7px", paddingLeft: "10px" }}>
+              <li>Assisting customers with purchases.</li>
+              <li>Handling cash register transactions.</li>
+            </ul>
+          </div>
+          <div className="mt-1">
+            <h5 style={{ fontSize: "8px" }}>Intern</h5>
+            <p className="mb-0" style={{ fontSize: "7px" }}>Company ABC | 2019 - 2021</p>
+            <ul style={{ fontSize: "7px", paddingLeft: "10px" }}>
+              <li>Gained hands-on experience in accounting tasks.</li>
+              <li>Assisted in monthly reporting.</li>
+            </ul>
+          </div>
 
-            <Row className="mt-4">
-              <Col md={8}>
-                <h5>Professional Summary</h5>
-                <p>
-                  Accomplished Education Coordinator oversees lesson planning, testing, and educational
-                  activities. Quickly learns and applies principles to develop a comprehensive education
-                  continuum. Dedicated to meeting expectations and requirements of parents and students.
-                </p>
-              </Col>
-              <Col md={4}>
-                <h5>Contact</h5>
-                <p>
-                  lora.email@gmail.com <br />
-                  (123) 456-789 <br />
-                  New York City, NY 00926
-                </p>
-              </Col>
-            </Row>
+          <h2 className="mt-2" style={{ fontSize: "10px", borderBottom: "1px solid #ccc" }}>Education</h2>
+          <div className="mt-1">
+            <h5 style={{ fontSize: "8px" }}>Diploma in Financial Accounting</h5>
+            <p className="mb-0" style={{ fontSize: "7px" }}>XYZ Institute | 2018</p>
+          </div>
 
-            <hr />
-
-            <Row>
-              <Col>
-                <h5>Work History</h5>
-                <div>
-                  <h6>Professional Driving School Of The Americas Inc: Education Coordinator</h6>
-                  <p className="text-muted">San Francisco, TX | 12/2018 - 06/2020</p>
-                  <ul>
-                    <li>Developed community education programming events and other activities designed to increase and improve educational outcomes.</li>
-                    <li>Planned, formulated, and assessed goals, policies, and activities designed to implement educational objectives and performance standards.</li>
-                    <li>Leveraged knowledge of budget and educational designs to facilitate development of cost-effective educational programs.</li>
-                    <li>Conducted conferences with parents and students to review progress, adjust academic plans, and renew enrollments.</li>
-                  </ul>
-                </div>
-                <div>
-                  <h6>Professional Driving Academy: Training Education Coordinator</h6>
-                  <p className="text-muted">San Francisco, TX | 10/2018 - 06/2020</p>
-                  <ul>
-                    <li>Evaluated success of training programs and recommended improvements to upper management to enhance effectiveness.</li>
-                    <li>Reviewed and edited all training materials for accuracy and company policy compliance.</li>
-                    <li>Coordinated ongoing technical training and personal development classes for staff members.</li>
-                  </ul>
-                </div>
-              </Col>
-            </Row>
-
-            <hr />
-
-            <Row>
-              <Col md={6}>
-                <h5>Skills</h5>
-                <ul>
-                  <li>Program Management</li>
-                  <li>Classroom Administration</li>
-                  <li>Hiring Coordination</li>
-                  <li>Learning Management System Proficiency</li>
-                  <li>Curriculum Coordination</li>
-                  <li>Teacher Training</li>
-                  <li>Observation Reports</li>
-                  <li>Activity Planning</li>
-                </ul>
-              </Col>
-              <Col md={6}>
-                <h5>Education</h5>
-                <p>
-                  <strong>Texas A&M University - Central Texas</strong> <br />
-                  Killeen, TX <br />
-                  Bachelor of Arts, Education Administration (06/2017)
-                </p>
-              </Col>
-            </Row>
-          </Card.Body>
-        </Card>
-      </Container>
+          <div className="text-center mt-2">
+            <Button
+              variant="primary"
+              className="text-uppercase"
+              style={{ fontSize: "8px", padding: "2px 5px" }}
+            >
+              Recommended
+            </Button>
+          </div>
+        </Col>
+      </Row>
     </div>
+  </Col>
   );
 };
 

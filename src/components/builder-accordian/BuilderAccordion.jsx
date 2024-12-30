@@ -1,5 +1,10 @@
 import { Accordion, Col } from 'react-bootstrap';
 import BasicDetails from './basic-deatils/BasicDetails';
+import ProfessionalExperience from './professional-experience/ProfessionalExperience';
+import EducationSteps from './education/EducationSteps';
+import Skills from './Skills/Skills';
+import Summary from './Summary/Summary';
+import AdditionalSection from './AdditionalSection/AdditionalSection';
 
 const BuilderAccordion = () => {
   const accordionItems = [
@@ -11,17 +16,27 @@ const BuilderAccordion = () => {
     {
       eventKey: '1',
       header: 'Professional Experience',
-      components:<BasicDetails/>
+      components:<ProfessionalExperience/>
     },
     {
       eventKey: '2',
       header: 'Education',
-      components:<BasicDetails/>
+      components:<EducationSteps/>
     },
     {
       eventKey: '3',
       header: 'Skills',
-      components:<></>,
+      components:<Skills/>,
+    },
+    {
+      eventKey: '4',
+      header: 'Summary',
+      components:<Summary/>,
+    },
+    {
+      eventKey: '5',
+      header: 'Additional Section',
+      components:<AdditionalSection/>,
     }
   ];
 
